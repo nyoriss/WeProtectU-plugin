@@ -1,0 +1,21 @@
+body {
+    width: 220px;
+    background-color: lightblue;
+}
+
+h2 {
+    color: navy;
+    margin-left: 20px;
+}
+
+div.div1 {
+    margin: 7%;
+    width: 150px;
+    height: 100px;
+}
+
+p.paragraph {
+    width: 140px;
+    height: 30px;
+    margin: 5px;
+}

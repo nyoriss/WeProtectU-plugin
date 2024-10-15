@@ -8,7 +8,26 @@
 </head>
     <body>
         <h2 id="title">WeProtectU plugin</h2>
-        <div class="div1"></div>
+        <div class="div1">
+            <a id="linkToWebSite" class="link"></a>
+        </div>
+        <div class="div2">
+            <a id="reportUserFromAccountPage" class="link"></a>
+        </div>
+        <div class="divReportUser">
+            <p id="reportUserText"></p>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
+
+<!--
+https://stackoverflow.com/questions/7697001/accessing-the-current-html-page-from-chrome-extension
+Manifest.json
+"content_scripts": [
+  {
+  "matches": ["http://urlhere/*"],
+  "js": ["contentscript.js"]
+  }
+],
+-->

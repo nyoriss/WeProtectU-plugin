@@ -11,11 +11,23 @@ h2 {
 div.div1 {
     margin: 7%;
     width: 150px;
-    height: 100px;
+    height: 50px;
+}
+div.div2 {
+    margin: 7%;
+    width: 150px;
+    height: 50px;
 }
 
 p.paragraph {
     width: 140px;
     height: 30px;
     margin: 5px;
+}
+
+.link {
+    color: #0000EE;
+    text-underline: #0000EE;
+    text-decoration: underline;
+    text-underline-position: auto;
 }

@@ -35,7 +35,8 @@ async function setReportText() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("ok c'est bon1")
     setReportText()
-    console.log("ok c'est bon2")
+    let returnText = document.getElementById("backToMenu")
+    returnText.textContent = "← retour"
+    returnText.href = "./index.html"
 });

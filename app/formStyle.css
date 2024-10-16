@@ -1,15 +1,20 @@
+div.returnDiv {
+    margin: 15px 0 15px 15px;
+}
+
 /* Styles basiques pour le formulaire */
 .form-container {
-    max-width: 300px; /* Réduction de la largeur de la boîte du formulaire */
-    margin: 50px 0 50px 20px; /* Aligner à gauche */
+    max-width: 300px; /* Garde la largeur fixe du conteneur */
+    margin: 20px 17px 20px 20px; /* Aligner à gauche */
     padding: 15px; /* Réduction de l'espace intérieur */
-    border: 1px solid #ddd;
+    border: 1px solid white; /* Bordure blanche */
     border-radius: 10px;
-    background-color: #624ff8; /* Couleur de fond plus claire pour un meilleur contraste */
+    background-color: black; /* Fond noir */
+    color: white; /* Texte en blanc */
 }
 
 form div {
-    width: 300px;
+    width: 300px; /* Assurer que tous les conteneurs de champs ont une largeur de 100% */
     margin-bottom: 10px; /* Réduction de l'espace entre les éléments du formulaire */
 }
 
@@ -19,37 +24,44 @@ label {
     white-space: pre-wrap;
     word-wrap: break-word;
     margin-bottom: 3px; /* Réduction de l'espace sous les labels */
+    color: white; /* Texte en blanc */
 }
 
 input, select, textarea {
-    width: 100%;
+    width: 100%; /* Assure que tous les champs prennent la largeur totale du conteneur parent */
+    max-width: 300px; /* Limite la largeur à 300px pour uniformiser */
     padding: 8px; /* Réduction de l'espace intérieur des champs */
-    border: 1px solid #ccc;
+    border: 1px solid white; /* Bordure blanche */
+    background-color: black; /* Fond noir pour les champs */
+    color: white; /* Texte en blanc */
     border-radius: 5px;
+    box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur */
 }
 
 button {
-    background-color: #7B68EE;
-    color: white;
+    background-color: white; /* Fond du bouton en blanc */
+    color: black; /* Texte du bouton en noir */
     padding: 8px 15px; /* Réduction de l'espace intérieur du bouton */
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%; /* Assure que les boutons ont la même largeur que les champs */
+    max-width: 300px; /* Fixe une largeur maximale identique aux champs */
 }
 
 button:disabled {
-    background-color: #ccc; /* Change la couleur du bouton désactivé */
+    background-color: gray; /* Change la couleur du bouton désactivé */
     cursor: not-allowed; /* Change le curseur pour indiquer que le bouton est désactivé */
 }
 
 button:hover:not(:disabled) {
-    background-color: #6A5ACD; /* Change la couleur du bouton au survol uniquement si il n'est pas désactivé */
+    background-color: lightgray; /* Change la couleur du bouton au survol uniquement s'il n'est pas désactivé */
 }
 
 /* Styles pour le message de succès */
 .success-message {
     margin-top: 15px;
-    color: green; /* Couleur du message de succès */
+    color: white; /* Texte en blanc */
     font-weight: bold;
     transition: opacity 0.5s ease; /* Animation douce pour l'apparition */
 }
@@ -73,10 +85,13 @@ button:hover:not(:disabled) {
     width: 18px; /* Réduit la taille de la case à cocher */
     height: 18px; /* Réduit la taille de la case à cocher */
     margin-right: 5px; /* Espacement à droite de la case à cocher */
+    background-color: black; /* Fond noir */
+    border: 1px solid white; /* Bordure blanche */
 }
 
 .confidential-label {
     font-size: 9px; /* Réduit la taille de la police du texte de confidentialité */
-    color: #fff; /* Couleur blanche pour le texte de confidentialité */
+    color: white; /* Texte en blanc */
     cursor: pointer; /* Change le curseur au survol */
 }
+

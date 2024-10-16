@@ -1,39 +1,48 @@
 body {
     width: 220px;
-    background-color: lightblue;
+    background-color: black; /* Fond noir */
+    color: white; /* Texte en blanc */
 }
 
 h2 {
-    color: navy;
+    color: white; /* Texte en blanc */
     margin-left: 20px;
 }
 
 div.div1 {
     margin: 10%;
     width: 150px;
-    height: 50px;
+    height: 70px;
+    background-color: black; /* Fond noir */
+    color: white; /* Texte en blanc */
 }
+
 div.div2 {
     margin: 10%;
     width: 150px;
     height: 50px;
+    background-color: black;
+    color: white;
 }
 
 p.paragraph {
     margin: 10%;
     width: 140px;
     height: 30px;
+    background-color: black;
+    color: white;
 }
 
 div.divReportPage p {
     margin-left: 10px;
     max-width: 85%;
     word-wrap: break-word;
+    color: white; /* Texte en blanc */
 }
 
 .link {
-    color: #0000EE;
-    text-underline: #0000EE;
+    color: white; /* Lien en blanc */
+    text-underline: white; /* Soulignement blanc */
     text-decoration: underline;
     text-underline-position: auto;
 }

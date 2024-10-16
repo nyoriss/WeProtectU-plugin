@@ -9,20 +9,26 @@ h2 {
 }
 
 div.div1 {
-    margin: 7%;
+    margin: 10%;
     width: 150px;
     height: 50px;
 }
 div.div2 {
-    margin: 7%;
+    margin: 10%;
     width: 150px;
     height: 50px;
 }
 
 p.paragraph {
+    margin: 10%;
     width: 140px;
     height: 30px;
-    margin: 5px;
+}
+
+div.divReportPage p {
+    margin-left: 10px;
+    max-width: 85%;
+    word-wrap: break-word;
 }
 
 .link {
@@ -30,4 +36,19 @@ p.paragraph {
     text-underline: #0000EE;
     text-decoration: underline;
     text-underline-position: auto;
+}
+
+div.divReportPageChoice {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a#confirmReportPage {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+a#cancelReportPage {
+    margin-left: 5%;
+    margin-right: 5%;
 }

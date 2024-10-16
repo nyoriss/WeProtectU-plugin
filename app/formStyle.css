@@ -1,0 +1,82 @@
+/* Styles basiques pour le formulaire */
+.form-container {
+    max-width: 300px; /* Réduction de la largeur de la boîte du formulaire */
+    margin: 50px 0 50px 20px; /* Aligner à gauche */
+    padding: 15px; /* Réduction de l'espace intérieur */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #624ff8; /* Couleur de fond plus claire pour un meilleur contraste */
+}
+
+form div {
+    width: 300px;
+    margin-bottom: 10px; /* Réduction de l'espace entre les éléments du formulaire */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 3px; /* Réduction de l'espace sous les labels */
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px; /* Réduction de l'espace intérieur des champs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #7B68EE;
+    color: white;
+    padding: 8px 15px; /* Réduction de l'espace intérieur du bouton */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc; /* Change la couleur du bouton désactivé */
+    cursor: not-allowed; /* Change le curseur pour indiquer que le bouton est désactivé */
+}
+
+button:hover:not(:disabled) {
+    background-color: #6A5ACD; /* Change la couleur du bouton au survol uniquement si il n'est pas désactivé */
+}
+
+/* Styles pour le message de succès */
+.success-message {
+    margin-top: 15px;
+    color: green; /* Couleur du message de succès */
+    font-weight: bold;
+    transition: opacity 0.5s ease; /* Animation douce pour l'apparition */
+}
+
+/* Animation fade */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active pour <2.1.8 */ {
+    opacity: 0;
+}
+
+/* Styles pour la case à cocher de confidentialité */
+.confidentiality-container {
+    display: flex;
+    align-items: center; /* Aligne verticalement la case à cocher et le texte */
+    margin-top: 10px; /* Espacement au-dessus de la case à cocher */
+}
+
+.confidential-checkbox {
+    width: 18px; /* Réduit la taille de la case à cocher */
+    height: 18px; /* Réduit la taille de la case à cocher */
+    margin-right: 5px; /* Espacement à droite de la case à cocher */
+}
+
+.confidential-label {
+    font-size: 9px; /* Réduit la taille de la police du texte de confidentialité */
+    color: #fff; /* Couleur blanche pour le texte de confidentialité */
+    cursor: pointer; /* Change le curseur au survol */
+}

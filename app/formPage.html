@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chrome Extension Form Page</title>
+        <link rel="stylesheet" href="formStyle.css" />
+        <script src="formPageScript.js"></script>
+    </head>
+    <body>
+        <div>
+            <!-- Formulaire pour soumettre les données à la base SQL -->
+            <div class="form-container">
+                <form class="reportForm">
+                    <div>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" required />
+                    </div>
+
+                    <div>
+                        <label for="age">Âge:</label>
+                        <input type="number" id="age" required min="0" />
+                    </div>
+
+                    <div>
+                        <label for="sexe">Sexe:</label>
+                        <select id="sexe" required>
+                            <option value="" disabled selected>Sélectionnez un sexe</option>
+                            <option value="Homme">Homme</option>
+                            <option value="Femme">Femme</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="motif">Motif:</label>
+                        <select  id="motif" required>
+                            <option value="" disabled selected>Sélectionnez un motif</option>
+                            <option value="Racisme">Racisme</option>
+                            <option value="Harcèlement">Harcèlement</option>
+                            <option value="Homophobie">Homophobie</option>
+                            <option value="Cyberharcèlement">Cyberharcèlement</option>
+                            <option value="Diffamation en ligne">Diffamation en ligne</option>
+                            <option value="Menaces">Menaces</option>
+                            <option value="Intimidation">Intimidation</option>
+                            <option value="Usurpation d'identité">Usurpation d'identité</option>
+                            <option value="Discrimination">Discrimination</option>
+                            <option value="Trolling">Trolling</option>
+                            <option value="Harcèlement sexuel">Harcèlement sexuel</option>
+                            <option value="Cyberstalking">Cyberstalking</option>
+                            <option value="Doxxing">Doxxing</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div >
+                        <label for="customMotif">Motif personnalisé:</label>
+                        <textarea  id="customMotif" placeholder="Décrivez votre motif ici..."></textarea>
+                    </div>
+
+                    <div>
+                        <label for="url">URL du site problématique :</label>
+                        <input type="text" id="url" required />
+                    </div>
+
+                    <div class="confidentiality-container">
+                        <input type="checkbox" id="confidential" class="confidential-checkbox" />
+                        <label for="confidential" class="confidential-label">J'accepte que mon email soit traité de manière confidentielle.</label>
+                    </div>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

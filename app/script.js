@@ -24,7 +24,4 @@ document.addEventListener("DOMContentLoaded", () => {
     let reportLink = document.getElementById("reportThisPage");
     reportLink.textContent = "Reporter ce site ou cet utilisateur";
     reportLink.href = "./reportPage.html"
-
-    // Ajoute reportLink au DOM si ce n'est pas déjà fait
-    document.querySelector("div.div2").appendChild(reportLink);
 });

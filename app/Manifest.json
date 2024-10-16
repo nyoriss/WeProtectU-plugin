@@ -4,9 +4,16 @@
   "description": "WeProtectU-plugin",
   "version": "0.1",
   "permissions": [
-    "tabs"
+    "tabs",
+    "scripting"
   ],
   "action": {
     "default_popup": "index.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal"],
+      "js": ["background.js"]
+    }
+  ]
 }
